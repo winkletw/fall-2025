@@ -270,8 +270,6 @@ function matrixops(A::Array{Float64}, B::Array{Float64})
     return out1, out2, out3
 end
 
-
-# part a d f of 4
 function q4()
     #---------------------------------------------------------------------------
     # part a 
