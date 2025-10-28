@@ -2,7 +2,7 @@
 * In-Class Activity: Residential Mobility Preferences
 * Simplified Replication Exercise
 ********************************************************************************
-
+version 19.5
 clear all
 set more off
 
