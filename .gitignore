@@ -39,3 +39,4 @@ ProblemSets/*/PS*Ransom*.jl
 References/*.tex
 References/*.pdf
 References/TrainTextbook/*.pdf
+.DS_Store
