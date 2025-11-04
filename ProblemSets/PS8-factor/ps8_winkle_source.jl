@@ -30,9 +30,8 @@ Model: logwage ~ black + hispanic + female + schoolt + gradHS + grad4yr
 - Regression results from GLM.lm()
 """
 function estimate_base_regression(df::DataFrame)
-    # TODO: Use the @formula macro and lm() function to estimate the regression
+    # Use the @formula macro and lm() function to estimate the regression
     # Formula: logwage ~ black + hispanic + female + schoolt + gradHS + grad4yr
-    
 end
 
 
@@ -96,8 +95,7 @@ Model: logwage ~ black + hispanic + female + schoolt + gradHS + grad4yr +
 - Given the correlations you computed, what problems might arise?
 """
 function estimate_full_regression(df::DataFrame)
-    # TODO: Estimate regression with all ASVAB scores included
-    
+    # Estimate regression with all ASVAB scores included
 end
 
 #==================================================================================
@@ -293,7 +291,7 @@ function factor_model(θ::Vector{T}, X::Matrix, Xfac::Matrix, Meas::Matrix,
         like += ω[r] .* prod(Mlike, dims = 2) .* Ylike .* pdf.(Normal(0,1), ξ[r])
     end
     
-    # TODO: Return negative sum of log-likelihoods
+    # Return negative sum of log-likelihoods
     return -sum(log.(like))
 end
 
@@ -337,7 +335,7 @@ function run_estimation(df::DataFrame, start_vals::Vector)
     H = Optim.hessian!(td, result.minimizer)
     se = sqrt.(diag(inv(H)))
     
-    # TODO: Return estimates, standard errors, and log-likelihood
+    # Return estimates, standard errors, and log-likelihood
     return result.minimizer, se, result.minimum
     
 end
